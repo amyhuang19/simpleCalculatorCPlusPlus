@@ -16,19 +16,18 @@ double division(double num1, double num2);
 //main function
 int main(void) {
 	
-	//get user input
-	double num1, num2;
-	cout << "Please enter 2 numbers: ";
-	cin >> num1 >> num2;
-
-
 	//preform operations until stop
 	bool continueLoop = true;
 	while (continueLoop == true) { 
+    	//get user input
+	    double num1, num2;
+	    cout << "Please enter 2 numbers separated by spaces: ";
+	    cin >> num1 >> num2;
 
 		//choose operations
 		int operation;
-		cout << "Operation choices: (1) addition, (2) subtraction, (3) multiplication, (4) division";
+		cout << "Operation choices: (1) addition, (2) subtraction, (3) multiplication, (4) division" << endl;
+		cout << "Enter operation: ";
 		cin >> operation;
 
 		double output; //store each output of each iteration in this var
